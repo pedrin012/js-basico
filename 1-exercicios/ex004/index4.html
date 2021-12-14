@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabalhando com dados v2.0</title>
+
+<style>
+
+body{font: 12pt arial;}
+
+button{font-size: 12pt;padding: 30px ;}
+
+</style>
+</head>
+<body>
+    
+<h1>trabalhando com dados v2.0</h1>
+
+<button onclick="inicio()">clique para comrçar</button>
+<section id="resultado">
+
+<p>aqui vai aparecer o resultado....</p>
+
+</section>
+
+<script>
+
+function inicio(){
+
+let nome = window.prompt('qual e o seu nome?')
+let res = window.document.getElementById('resultado')
+
+res.innerHTML =`<p>ola,<strong>${nome}</strong>! E um grande prazer em te conhecer! &#x1f596;`
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>

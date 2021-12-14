@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador de cliques</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<h1>contador de cliques</h1>
+
+<button onclick="contar()">clique em mim</button>
+<button onclick="zerar()">zerar o contador</button>
+<section id="result">
+<p> o contador esta com <mark>0</mark>cliques.</p>
+
+<script src="script.js"></script>
+
+</section>
+<script>
+    
+    function somar() {
+        let n1 = Number(window.prompt('Digite um número: '))
+        let n2 = Number(window.prompt('Digite outro número:'))
+        soma = n1 + n2
+
+        let res = document.querySelector('section#res')
+        res.innerHTML = `<p>A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${soma}</strong>!</p>`
+    }
+</script>
+
+</body>
+</html>
